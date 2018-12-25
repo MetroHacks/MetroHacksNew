@@ -332,30 +332,9 @@
 
 
     <div class="w3-third w3-margin-bottom">
+<a><img src='https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQB3a3aouZcIPEF0di4r9uK4c0r9FlFnCasg_P8ISk8tZytippZRQ'></a>
+<div>text</div>
 
-      <ul class="w3-ul w3-border w3-hover-shadow">
-
-        <li class="w3-theme">
-
-          <p class="w3-xlarge">Image</p>
-
-        </li>
-
-        <li class="w3-padding-16">Name</li>
-
-        <li class="w3-padding-16"><b>10</b> Bio</li>
-
-
-
-  
-
-        <li class="w3-theme-l5 w3-padding-24">
-
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-
-        </li>
-
-      </ul>
 
     </div>
 
@@ -662,7 +641,18 @@
 <script>
 
 // Script for side navigation
+div {
+    display: none;
+    height:30px;
+    width:240px;
+    margin-left:30px;
+    position: relative; /* Declared position allows for location changes */
+    top:-10px;
+}
 
+a:hover + div {
+    display: block;
+}
   
 function w3_open() {
 
