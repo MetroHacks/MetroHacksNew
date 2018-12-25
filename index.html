@@ -87,18 +87,18 @@
 
 
 <!-- Image Header -->
-           <a href="#aboutinformation"><button class="button button1", style="font-family:courier"><center>Enter the Website</center></button></a>
 
   <div class="section">
         
 
         <div class="video-container">
             
-            <video autoplay="" loop="" muted="">
+            <video id="glass" width="640" height="360" autoplay="" loop="" muted="">
                 <source src="Video_2.mp4" type="video/mp4">
             </video>
            
         </div>
+        <a href="#aboutinformation"><button class="button button1", style="font-family:courier"><center>Enter the Website</center></button></a>
 
     </div>
 
@@ -107,7 +107,7 @@
 
     <center>
       <button onclick="window.location.href = 'https://google.com';" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Mentor</button>
-      <button onclick="window.location.href = 'https://google.com';" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Reister</button>
+      <button onclick="window.location.href = 'https://google.com';" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Register</button>
       <button onclick="window.location.href = 'https://google.com';" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Sponsor</button>
     </center>
   </div>
@@ -658,6 +658,12 @@
 
 </footer>
 <style>
+    
+ #glass{
+    margin-left: -220px;
+}
+  
+    
   #navbar {
   background-color: #333;
   position: fixed;
