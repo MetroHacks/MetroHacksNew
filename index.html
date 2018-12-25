@@ -84,10 +84,9 @@
 
 
 <!-- Image Header -->
-
-  
-
-    <div class="section">
+    <a href="#aboutinformation"><button class="button button1", style="font-family:courier"><center>Enter the Website</center></button></a>
+   
+  <div class="section">
         <h1>Metrohacks Women^2</h1>
 
         <div class="video-container">
@@ -98,13 +97,12 @@
         </div>
   </div>
 
-  <a href="#aboutinformation"><button class="button button1", style="font-family:courier"><center>Enter the Website</center></button></a>
 
   <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="header">
 
 
   
-  <div id="aboutinformation">  <button onclick="window.location.href = 'https://google.com';" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Mentor</button></div>
+   <button onclick="window.location.href = 'https://google.com';" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Mentor</button>
 
       <button onclick="window.location.href = 'https://google.com';" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Register</button>
 
@@ -124,7 +122,7 @@
 
 
 
-  <h2 style="font-family:courier"><center>About Metrohacks</center></h2>
+  <div id="aboutinformation"><h2 style="font-family:courier"><center>About Metrohacks</center></h2></div>
 
 <p style="color:#FFFFFF", style="font-family:courier"><center>MetroHacks is biggest the  high school hackathon, or tech gathering and competition, in New England. For 24 hours, learn about new technology, talk to industry professionals, meet up with friends, and make new ones. Participate in workshops, learn from speeches, and work with experts from companies like , Google, and Red Hat. High school students ages 13-18 can come, regardless of experience. The event is completely free, and meals are provided for all participants.</center></p>
 
@@ -318,9 +316,9 @@
 
 <div class="w3-container" style="position:relative">
 
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-
-  style="position:absolute;top:-28px;right:24px">+</a>
+  <span class="w3-text w3-padding w3-teal w3-hide-small">Meet the Team</span>  
+  
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
 
 </div>
 
@@ -638,6 +636,31 @@
 
 </footer>
 <style>
+  #navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+  
   .button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -748,7 +771,15 @@
 <script>
 
 // Script for side navigation
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
 
   
 function w3_open() {
