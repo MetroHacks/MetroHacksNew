@@ -103,14 +103,41 @@
 </div>
 
 
-
 <!-- Image Header -->
 
 <div class="w3-display-container w3-animate-opacity">
  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W9iGFhr00JU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Background</title>
+</head>
+
+<body>
+
+    <div class="section">
+
+        <h1>Welcome To Paradise</h1>
+
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay="" loop="" muted="">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+    <div style="height:400px;width:100%">
+    </div>
+
+
+
+  </body></html>
 
     <button onclick="www.google.com" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Prospectus">Sponsor</button>
 
@@ -735,6 +762,43 @@ function openNav() {
 
 }
 
+  
+  .section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Cookie";
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
 </script>
 
 
