@@ -659,6 +659,7 @@
  .enter {
   position: relative;
   width: 100%;
+    height:100%;
   max-width: 400px;
 } 
     
@@ -824,7 +825,17 @@
 </style>
 
 <script>
+window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myP").className = "test";
+  } else {
+    document.getElementById("myP").className = "";
+  }
+}
+    
+    
 // Script for side navigation
 window.onscroll = function() {scrollFunction()};
 
