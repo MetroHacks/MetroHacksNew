@@ -90,14 +90,16 @@
 
   <div class="section">
         
-
+        <div class="enter">
         <div class="video-container">
             
             <video id="glass" autoplay="" loop="" muted="">
                 <source src="Video_2.mp4" type="video/mp4">
             </video>
-        <a href="#aboutinformation"><button class="button button1", style="font-family:courier"><center>Enter the Website</center></button></a>
            
+            </div>
+            <a href="#aboutinformation"><button class="btn", style="font-family:courier"><center>Enter the Website</center></button></a>
+
         </div>
 
     </div>
@@ -658,6 +660,32 @@
 
 </footer>
 <style>
+ .enter {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+} 
+    
+  .enter .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.enter .btn:hover {
+  background-color: green;
+}    
     
  #glass{
     margin-left: -200px;
@@ -691,6 +719,7 @@
 }
   
   
+   
   .button {
   background-color: #4CAF50; /* Green */
   border: none;
