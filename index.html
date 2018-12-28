@@ -87,12 +87,29 @@
 
 
 <!-- Image Header -->
+var iterations = 1;
 
+document.getElementById('iteration').innerText = iterations;
+
+myVideo.addEventListener('ended', function () {    
+
+    if (iterations < 5) {       
+
+        this.currentTime = 0;
+        this.play();
+        iterations ++;
+        
+        document.getElementById('iteration').innerText = iterations;
+
+    }   
+
+}, false);
+                       
   <div class="section">
         
         <div class="enter">
         <div class="video-container">
-            
+            <span id="iteration"></span>
             <video autoplay loop muted>
                 <source src="Video_2.mp4" type="video/mp4">
             </video>
