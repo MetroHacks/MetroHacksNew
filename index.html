@@ -119,7 +119,6 @@
 
   
 
-<center>
   <button class="accoridon">Who can come?</button>
   <div class="panel">
       <p>All high schoolers, aged 13-19, can come! No experience is required - if you're motivated and love tech, you're welcome at MetroHacks.</P>
@@ -150,7 +149,24 @@
   <button class="accoridon">How do I form a team?</button>
   <div class="panel">
       <p>You’ll have time to find a team when you arrive. If you already have a team, just list your teammates when you register.</P>
-  </div>                                          
+  </div>  
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+  }
+</script>
                                             
     
 </div>
