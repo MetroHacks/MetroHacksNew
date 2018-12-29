@@ -109,30 +109,44 @@
 
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="about">
 
-
-
-  <div id="aboutinformation"><h2 style="font-family:courier"><center>About Metrohacks</center></h2></div>
+<div id="aboutinformation"><h2 style="font-family:courier"><center>About Metrohacks</center></h2></div>
 
 <p style="color:#FFFFFF", style="font-family:courier"><center>MetroHacks is biggest the  high school hackathon, or tech gathering and competition, in New England. For 24 hours, learn about new technology, talk to industry professionals, meet up with friends, and make new ones. Participate in workshops, learn from speeches, and work with experts from companies like , Google, and Red Hat. High school students ages 13-18 can come, regardless of experience. The event is completely free, and meals are provided for all participants.</center></p>
 
 
 
-  
+  <button class="accordion">Who can come?</button>
+<div class="panel">
+  <p>All high schoolers, aged 13-19, can come! No experience is required - if you're motivated and love tech, you're welcome at MetroHacks.</p>
+</div>
 
-  <button class="accoridon">Who can come?</button>
-  <div class="panel">
-      <p>All high schoolers, aged 13-19, can come! No experience is required - if you're motivated and love tech, you're welcome at MetroHacks.</P>
-  </div>
-  
-  <button class="accoridon">How much does it cost?</button>
-  <div class="panel">
-      <p>MetroHacks costs nothing. Registering and attending is free, and you get free food, t-shirts, prizes, swag and lessons.</P>
-  </div>
-    
-  <button class="accoridon">What should I bring?</button>
-  <div class="panel">
-      <p>Bring a Photo ID,  laptop, charger, sleeping bag, toiletries, change of clothes. We’ll take care of the rest.</P>
-  </div>
+<button class="accordion">How much does it cost?</button>
+<div class="panel">
+  <p>MetroHacks costs nothing. Registering and attending is free, and you get free food, t-shirts, prizes, swag and lessons.</p>
+</div>
+
+<button class="accordion">What should I bring?</button>
+<div class="panel">
+  <p>Bring a Photo ID,  laptop, charger, sleeping bag, toiletries, change of clothes. We’ll take care of the rest.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
                                                                                   
         
   <button class="accoridon">When is it?</button>
