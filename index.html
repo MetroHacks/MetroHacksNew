@@ -32,9 +32,11 @@
   font-size: 15px;
   transition: 0.4s;
 }
+
 .active, .accordion:hover {
   background-color: #ccc; 
 }
+
 .panel {
   padding: 0 18px;
   display: none;
@@ -57,7 +59,7 @@
  <div class="w3-bar w3-theme-d2 w3-left-align">
 
 <div id="navbar">
-  <a href="#header" class="w3-bar-item w3-button" style="background-color:rgb(95, 75, 139);"><i class="fa fa-home w3-margin-right"></i>Metrohacks</a>
+  <a href="#header" class="w3-bar-item w3-button w3-2018-ultra-violet !important "><i class="fa fa-home w3-margin-right"></i>Metrohacks</a>
 
   <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
 
@@ -161,6 +163,7 @@
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
+
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -218,7 +221,7 @@ for (i = 0; i < acc.length; i++) {
  </div>  
         
      <div class="w3-container w3-padding-64 w3-center" id="WomensEvent">
-     <h1>Partnerships</h1>
+     <h1>Donors</h1>
      </div>
 
         
@@ -319,6 +322,21 @@ for (i = 0; i < acc.length; i++) {
 
     </div>
     </div>
+  <!-- Team Bios Container -->  
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="team bios">
+        <h1> Team Bios </h1>
+
+  <div class="w3-third w3-margin-bottom">
+<div class="container">
+  <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/042016/untitled-1_103.png?C1Kx9vbHdUsOu14DpRXMwK7zuFII2FO4&itok=nFYi4uog" alt="Avatar" class="image" height="50" width="200">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+    </div>
+  
+    </div>
     
 <!-- Contact Container -->
 
@@ -394,6 +412,8 @@ for (i = 0; i < acc.length; i++) {
   border-radius: 5px;
   text-align: center;
 }
+
+
 .enter .btn:hover {
   background-color: teal;
 }    
@@ -413,6 +433,7 @@ for (i = 0; i < acc.length; i++) {
   display: block;
   transition: top 0.3s;
 }
+
 #navbar a {
   float: left;
   display: block;
@@ -422,6 +443,7 @@ for (i = 0; i < acc.length; i++) {
   text-decoration: none;
   font-size: 17px;
 }
+
 #navbar a:hover {
   background-color: #ddd;
   color: black;
@@ -445,11 +467,13 @@ for (i = 0; i < acc.length; i++) {
   margin: 0 auto;
   display: block;
 }
+
 .button1 {
   background-color: white; 
   color: black; 
   border: 2px solid #4CAF50;
 }
+
 .button1:hover {
   background-color: #4CAF50;
   color: white;
@@ -459,11 +483,13 @@ for (i = 0; i < acc.length; i++) {
   position: relative;
   width: 50%;
 }
+
 .image {
   display: block;
   width: 100%;
   height: auto;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -476,9 +502,11 @@ for (i = 0; i < acc.length; i++) {
   transition: .5s ease;
   background-color: #008CBA;
 }
+
 .container:hover .overlay {
   opacity: 1;
 }
+
 .text {
   color: white;
   font-size: 20px;
@@ -501,6 +529,7 @@ for (i = 0; i < acc.length; i++) {
   justify-content: center;
   overflow: hidden;
 }
+
 .section h1 {
   text-align: center;
   font-size: 6rem;
@@ -510,12 +539,14 @@ for (i = 0; i < acc.length; i++) {
   z-index: 1;
   opacity: 0.7;
 }
+
 .video-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 .color-overlay {
   position: absolute;
   top: 0;
@@ -529,6 +560,7 @@ for (i = 0; i < acc.length; i++) {
 
 <script>
 window.onscroll = function() {myFunction()};
+
 function myFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("myP").className = "test";
@@ -540,6 +572,7 @@ function myFunction() {
     
 // Script for side navigation
 window.onscroll = function() {scrollFunction()};
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
@@ -547,30 +580,56 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+
   
 function w3_open() {
+
     var x = document.getElementById("mySidebar");
+
     x.style.width = "300px";
+
     x.style.paddingTop = "10%";
+
     x.style.display = "block";
+
 }
+
+
+
 // Close side navigation
+
 function w3_close() {
+
     document.getElementById("mySidebar").style.display = "none";
+
 }
+
+
+
 // Used to toggle the menu on smaller screens when clicking on the menu button
+
 function openNav() {
+
     var x = document.getElementById("navDemo");
+
     if (x.className.indexOf("w3-show") == -1) {
+
         x.className += " w3-show";
+
     } else { 
+
         x.className = x.className.replace(" w3-show", "");
+
     }
+
 }
+
     var vid = document.getElementById("myVideo");
+
 function getPlaySpeed() { 
   alert(vid.playbackRate);
 } 
+
 function setPlaySpeed() { 
   vid.playbackRate = 0.5;
 } 
@@ -583,3 +642,4 @@ function setPlaySpeed() {
 </body>
 
 </html>
+
