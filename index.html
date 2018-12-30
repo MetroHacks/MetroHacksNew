@@ -101,7 +101,7 @@
         <div class="enter">
         <div class="video-container">
             
-            <video autoplay="" loop="" muted="">
+            <video id="myVideo" autoplay="" loop="" muted="">
                 <source src="Video_2.mp4" type="video/mp4">
             </video>
            
@@ -221,7 +221,7 @@ for (i = 0; i < acc.length; i++) {
 </div>
  
     </div>    
-        <h1><center>Partnerships</center></h1>
+        <h1>Partnerships</h1>
     
 <div class="w3-row"><br>
 
@@ -744,6 +744,17 @@ function openNav() {
 
 }
 
+    var vid = document.getElementById("myVideo");
+
+function getPlaySpeed() { 
+  alert(vid.playbackRate);
+} 
+
+function setPlaySpeed() { 
+  vid.playbackRate = 0.5;
+} 
+    
+    
 </script>
 
 
