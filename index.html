@@ -325,48 +325,46 @@ for (i = 0; i < acc.length; i++) {
 </div>
     
     <!-- Team Bios Container -->  
-       <div class="w3-container w3-padding-64 w3-theme-l1 w3-center" id="team">
-           <h1> Team Bios </h1>
-        
 
-  <div class="w3-third w3-margin-bottom">
-<div class="container">
-  <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/042016/untitled-1_103.png?C1Kx9vbHdUsOu14DpRXMwK7zuFII2FO4&itok=nFYi4uog" alt="Avatar" class="image" height="50" width="200">
-  <div class="overlay">
-    <div class="text"><font size="2">Hi, I’m Ellen, a sophomore at Newton South High School in Newton, Massachusetts. When I’m not coding, designing, or listening to aggressive amounts of Drake, I’m probably blogging, taking pictures for Instagram, or working on my digital media and marketing company, Elysia Media. I also play lacrosse, compete in congressional debate, lead my school’s Future Business Leaders of America chapter, and have a fatal weakness for cheese fries. </font></div>
-  </div>
-</div>
-</div>
-  
-  <div class="w3-third w3-margin-bottom">
-<div class="container">
-  <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/042016/untitled-1_103.png?C1Kx9vbHdUsOu14DpRXMwK7zuFII2FO4&itok=nFYi4uog" alt="Avatar" class="image" height="50" width="200">
-  <div class="overlay">
-    <div class="text">Hey, I'm Jack McCoy. I'm a Junior at Cape Cod Academy where I am on the varsity Cross Country and Sailing teams, as well as the president of both the Pink Ribbon and Human Rights clubs. My favorite hobbies are working on various electronics projects, running my clothing brand, playing video games (of course), and making short documentaries (the most notable being one with WHOI and NASA).</div>
-  </div>
-</div>
-</div>
-           
-    <div class="w3-third w3-margin-bottom">
-<div class="container">
-  <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/042016/untitled-1_103.png?C1Kx9vbHdUsOu14DpRXMwK7zuFII2FO4&itok=nFYi4uog" alt="Avatar" class="image" height="50" width="200">
-  <div class="overlay">
-    <div class="text">Hi, I’m Sasha Hussain and I attend Foxboro High School, in the town and home of the Patriots. I got into coding during my first hackathon, and have been doing it since. I love getting involved in my community by playing for my cross country, track, and lacrosse team or playing the violin for my symphony, string, and chamber orchestra. I’m involved in a couple of clubs in my school including science, math, MUN, model senate, and a club that I started called Pen in a Box. I will win any dance battle and am called the queen of rap. I’m super excited to help run this event and can’t wait to inspire other people to start coding through hackathons.</div>
-  </div>
-</div>
-</div>
-             <div class="w3-third w3-margin-bottom">
-<div class="container">
-  <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/042016/untitled-1_103.png?C1Kx9vbHdUsOu14DpRXMwK7zuFII2FO4&itok=nFYi4uog" alt="Avatar" class="image" height="50" width="200">
-  <div class="overlay">
-    <div class="text">Hi! I'm Rachael and I'm a senior at Lexington High School. I love coding, singing classical music and finding new leadership opportunities in my community. My goal is to major in computer science and possibly in engineering. My hope is to inspire more girls into the STEM field.</div>
-  </div>
-</div>
-</div>
-           
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
     </div>
-    
-        </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Contact Container -->
 
 <div class="w3-container w3-padding-64 w3-theme-l5  w3-center" id="contact">
@@ -417,6 +415,62 @@ for (i = 0; i < acc.length; i++) {
 
 </footer>
 <style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}  
+ 
  .enter {
   position: relative;
   width: 100%;
