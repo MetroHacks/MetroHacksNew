@@ -52,6 +52,23 @@
   font-style: italic;
   font-family: "Arial", Times, serif;
 }
+    .newspaper {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid; /* Firefox */
+  column-rule-style: solid;
+  -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px; /* Firefox */
+  column-rule-width: 1px;
+  -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+  -moz-column-rule-color: lightblue; /* Firefox */
+  column-rule-color: lightblue;
+}
 
 </style>
     
@@ -76,7 +93,9 @@
 
   <a href="#Metrohacks4" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Metrohacks IV</a>
     
-  <a href="#WomensEvent" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Women's Event</a>  
+  <a href="#WomensEvent" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Women's Event</a> 
+      
+  <a href="#tracks" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Event Tracks</a> 
    
   <a href="#sponsors" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sponsors and Partners</a>
     
@@ -220,6 +239,18 @@ for (i = 0; i < acc.length; i++) {
     
 <button onclick="window.location.href = 'https://metrohacks1.typeform.com/to/mk0kmk';" class="w3-button w3-xlarge w3-theme w3-hover-deep-purple" title="Prospectus">Register</button>    
 
+        <!-- Event Tracks Container -->
+        
+        <div class="w3-container w3-padding-64 w3-center" id="tracks">
+            
+            <div class="newspaper">
+                <p>Bring the doctor’s office into our homes! Projects on this track could utilize wearable technology for patient monitoring outside the clinic, or enable a patient to schedule a consultation with their doctor over an app. They are typically concerned with ensuring the well being of the user, either mentally, physically, emotionally, or all three.</P>
+                <p>Build a project that would make Mother Nature proud. Projects on this track utilize technology, especially hardware, to combat some of the world’s most rapidly growing environmental issues including global warming, pollution, and the energy crisis.</P>
+                <p>Create a hack that leverages technology to improve the way our community, society, and government function. Projects that fall into this track often aim to unite different walks of society and enable users to take civic responsibility into their own hands. For example, tackle issues like voter turnout or develop tools to aid grassroots campaigns.</p>
+            </div>
+            
+        </div>
+        
         <!-- Sponsors and Partners Container -->    
 
 <div class="w3-container w3-padding-64 w3-center" id="sponsors">
