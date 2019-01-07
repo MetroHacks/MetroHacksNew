@@ -79,6 +79,23 @@
   font-style: italic;
   font-family: "arial", Times, serif;
 }
+    
+    .row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+    
     .newspaper {
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
@@ -476,37 +493,37 @@ var countdownfunction = setInterval(function() {
                 
 </div>
 
-<div class="w3-row-padding">
-  <div class="w3-column">
+<div class="row">
+  <div class="column">
+                        
   <div class="w3-container w3-third">
     <img src="wheat.JPG" style="width:100%;cursor:pointer" 
     onclick="document.getElementById('id01').style.display='block'" class="w3-hover-opacity">
   </div>
+                                                                                                                                                             
+  <div class="w3-container w3-third">
+    <img src="Screen Shot 2018-12-30 at 6.02.00 PM.png" style="width:100%;cursor:pointer" 
+    onclick="document.getElementById('id04').style.display='block'" class="w3-hover-opacity">
+  </div>
+
   </div>                                                                                          
                                                                                             
-  <div class="w3-column">                                                                                          
+  <div class="column">                                                                                          
   <div class="w3-container w3-third">
     <img src="ProfilePicture.png" style="width:100%;cursor:pointer" 
     onclick="document.getElementById('id02').style.display='block'" class="w3-hover-opacity">
   </div>
   </div>
                                                                                             
-  <div class="w3-column">                                                                                          
+  <div class="column">                                                                                          
   <div class="w3-container w3-third">
     <img src="Image from iOS.jpg" style="width:100%;cursor:pointer" 
     onclick="document.getElementById('id03').style.display='block'" class="w3-hover-opacity">
   </div>
   </div>
 </div>
-         
-<div class="w3-row-padding">                                                                                           
-  <div class="w3-column">                                                                                          
-  <div class="w3-container w3-third">
-    <img src="Screen Shot 2018-12-30 at 6.02.00 PM.png" style="width:100%;cursor:pointer" 
-    onclick="document.getElementById('id04').style.display='block'" class="w3-hover-opacity">
-  </div>
-  </div>
-</div>
+                                                                                               
+
 
 <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
   <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
