@@ -427,8 +427,11 @@ var countdownfunction = setInterval(function() {
  
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-black">&times;</span>
+        <div class="modal-header">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-white">&times;</span>
+          <h2>Ellen Yang</h2>
+      </div>
+      <div class="w3-container modal-body">
           <p>Hi, I’m Ellen, a sophomore at Newton South High School in Newton, Massachusetts. When I’m not coding, designing, or listening to aggressive amounts of Drake, I’m probably blogging, taking pictures for Instagram, or working on my digital media and marketing company, Elysia Media. </p>
       </div>
     </div>
@@ -436,8 +439,11 @@ var countdownfunction = setInterval(function() {
                 
    <div id="id02" class="w3-modal">
     <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright w3-black">&times;</span>
+      <div class="modal-header">
+          <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright w3-white">&times;</span>
+          <h2>Jack McCoy</h2>
+      </div>
+      <div class="w3-container" modal-body>
           <p>Hey, I'm Jack McCoy. I'm a Junior at Cape Cod Academy where I am on the varsity Cross Country and Sailing teams, as well as the president of both the Pink Ribbon and Human Rights clubs.  </p>
       </div>
     </div>
@@ -446,7 +452,7 @@ var countdownfunction = setInterval(function() {
    <div id="id03" class="w3-modal">
     <div class="w3-modal-content">
       <div class="modal-header">
-          <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright w3-black">&times;</span>
+          <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright w3-white">&times;</span>
           <h2>Sasha Hussain</h2>
       </div>
       <div class="w3-container modal-body">
@@ -799,7 +805,7 @@ display: block;
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: black;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -839,7 +845,7 @@ display: block;
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: rgb(95, 75, 139);
   color: white;
 }
 
