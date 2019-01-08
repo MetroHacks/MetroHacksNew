@@ -201,7 +201,7 @@
 
 
 <!-- Image Header -->  
-    <div id="StayFocusd-infobar" style="display:none;">
+ <div id="StayFocusd-infobar" style="display:none;">
     <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
     <span id="StayFocusd-infobar-msg"></span>
     <span id="StayFocusd-infobar-links">
@@ -211,22 +211,15 @@
 </div>
 
 
-<div class="w3-theme-l1 w3-center">
-        
-        <div class="video-container">
-            
-            
-  <video class="responsive" autoplay="" muted="" loop="">
-      <source src="MetroHacksLogoLoop.mp4" type="video/mp4"  alt="Metrohacks">                
-            </video>
-            <div>
-                <div class="enter">
-
-<button onclick="window.location.href = 'https://metrohacks1.typeform.com/to/mk0kmk';" class="btn">Register for MetroHacks Women<sup>2</sup></button>
-
-                </div>
-            </div> 
-        </div>
+<div class="video-container">
+    
+    <video class="responsive" autoplay="" muted="" loop="">
+  <source src="Video_2.mp4" alt="Metrohacks">
+  </video>
+  
+  
+  <button onclick="window.location.href = 'https://metrohacks1.typeform.com/to/mk0kmk';" class="btn">Register for MetroHacks Women<sup>2</sup></button>
+    
 
 </div>
 <!-- Work Row -->
@@ -755,14 +748,9 @@ html {
 
 
  
- .enter {
-  position: relative;
-  width: 100%;
-    height:100%;
-     margin-left:-440px;
-} 
+
     
-  .enter .btn {
+  .video-container .btn {
  position: absolute;
   top: 50%;
   left: 50%;
@@ -780,7 +768,7 @@ html {
   text-align: center;
 }
 
-.enter .btn:hover {
+.video-container .btn:hover {
   background-color: rgb(95, 75, 139);
 }  
  #glass{
@@ -901,13 +889,7 @@ html {
   opacity: 0.7;
 }
 
-.video-container {
-position: relative;
-  top: 0;
 
-  width: 100%;
-    height:auto;
-}
 
 .color-overlay {
   position: absolute;
@@ -985,7 +967,7 @@ position: relative;
 .modal-body {padding: 2px 16px;}
                        
  body { margin:0; }
-.container img {
+.video-container img {
   width: 100%;
   min-height: 100%;
   margin:none;
