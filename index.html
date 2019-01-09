@@ -414,7 +414,6 @@ var countdownfunction = setInterval(function() {
 </div>
    
   
-    <div class="w3-row center" align="middle">
     <div class="w3-quarter w3-margin-bottom">
 <div class="container">
   <img src="https://www.rstudio.com/wp-content/uploads/2014/07/RStudio-Logo-Blue-Gray.png" alt="Avatar" class="image" >
@@ -1096,7 +1095,15 @@ function myFunction() {
     
 // Script for side navigation
 
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
   
 function w3_open() {
 
