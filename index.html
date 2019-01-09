@@ -1094,16 +1094,22 @@ function myFunction() {
     
     
 // Script for side navigation
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
 
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (prevScrollpos >= currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "0px";
   }
+  prevScrollpos = currentScrollPos;
 }
+    
+    
+    
+    
   
 function w3_open() {
 
